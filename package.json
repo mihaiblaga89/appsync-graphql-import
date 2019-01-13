@@ -42,7 +42,7 @@
     "@types/lodash": "4.14.119",
     "@types/resolve-from": "0.0.18",
     "@types/node": "9.6.41",
-    "ava": "0.25.0",
+    "ava": "1.1.0",
     "ava-ts": "0.25.2",
     "graphql": "14.0.2",
     "nyc": "11.9.0",
