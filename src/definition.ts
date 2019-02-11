@@ -153,7 +153,7 @@ function collectNewTypeDefinitions(
 
     function collectDirective(directive: DirectiveNode) {
         const directiveName = directive.name.value;
-        if (directiveName === 'aws_auth') return;
+        if (['aws_auth', 'model', 'searchable'].includes(directiveName)) return;
         if (!definitionPool.some(d => d.name.value === directiveName) && !includes(builtinDirectives, directiveName)) {
             const directive = schemaMap[directiveName] as DirectiveDefinitionNode;
             if (!directive) {
